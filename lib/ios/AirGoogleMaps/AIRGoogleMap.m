@@ -25,17 +25,17 @@
 #import <objc/runtime.h>
 
 #ifdef HAVE_GOOGLE_MAPS_UTILS
-#import <Google-Maps-iOS-Utils/GMUKMLParser.h>
-#import <Google-Maps-iOS-Utils/GMUPlacemark.h>
-#import <Google-Maps-iOS-Utils/GMUPoint.h>
-#import <Google-Maps-iOS-Utils/GMUGeometryRenderer.h>
+#import <Google_Maps_iOS_Utils/GMUKMLParser.h>
+#import <Google_Maps_iOS_Utils/GMUPlacemark.h>
+#import <Google_Maps_iOS_Utils/GMUPoint.h>
+#import <Google_Maps_iOS_Utils/GMUGeometryRenderer.h>
 #define REQUIRES_GOOGLE_MAPS_UTILS(feature) do {} while (0)
 #else
 #define GMUKMLParser void
 #define GMUPlacemark void
 #define REQUIRES_GOOGLE_MAPS_UTILS(feature) do { \
  [NSException raise:@"ReactNativeMapsDependencyMissing" \
-             format:@"Use of " feature "requires Google-Maps-iOS-Utils, you  must install via CocoaPods to use this feature"]; \
+             format:@"Use of " feature "requires Google_Maps_iOS_Utils, you  must install via CocoaPods to use this feature"]; \
 } while (0)
 #endif
 
