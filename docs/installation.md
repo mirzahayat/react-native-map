@@ -258,7 +258,7 @@ iOS](https://github.com/googlemaps/google-maps-ios-utils). These include
 - Marker clustering
 - etc.
 
-### Clearing caches
+### Clearing caches and isse resolve
 
 Run these commands to clean caches
 
