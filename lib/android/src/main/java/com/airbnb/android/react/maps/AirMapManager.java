@@ -152,7 +152,6 @@ public class AirMapManager extends ViewGroupManager<AirMapView> {
       }
     }
 
-    view.applyBaseMapPadding(left, top, right, bottom);
     view.map.setPadding(left, top, right, bottom);
   }
 
@@ -355,7 +354,7 @@ public class AirMapManager extends ViewGroupManager<AirMapView> {
         break;
 
       case FIT_TO_ELEMENTS:
-        view.fitToElements(args.getMap(0), args.getBoolean(1));
+        view.fitToElements(args.getBoolean(0));
         break;
 
       case FIT_TO_SUPPLIED_MARKERS:
